@@ -1,0 +1,15 @@
+.motor-con{
+    background-image: url(../../assess/home.svg);
+    background-size: cover;
+    height: 400px;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.aidal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 50px;
+}

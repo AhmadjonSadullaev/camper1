@@ -1,0 +1,9 @@
+.footer-con{
+    height: 250px;
+   background: #006DAB;
+    color: white;
+    display: flex;
+   gap: 200px;
+   justify-content: space-around;
+   padding-top: 40px;
+}

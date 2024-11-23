@@ -1,0 +1,7 @@
+.turing-img{
+    background-image: url(../../assess/tuning/tuning.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
