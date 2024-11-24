@@ -1,9 +1,9 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import ccc1 from '../assess/ccc1.jpg';
-import ccc2 from '../assess/ccc2.jpg';
-import ccc3 from '../assess/ccc3.jpg';
-import ccc4 from '../assess/ccc4.webp';
+import caru from '../assess/home.svg';
+import ccc2 from '../assess/home.svg';
+import ccc3 from '../assess/home.svg';
+import ccc4 from '../assess/home.svg';
 import NavbarComponet from './navbar';
 import FooterComponet from './footer';
 
@@ -12,15 +12,10 @@ const CaricuelComponent = () => {
   return (
           <>
           <NavbarComponet/>
-             <Carousel avtoplay
-             //showArrows={true} 
-             //onChange={onChange}
-             // onClickItem={onClickItem} 
-             //onClickThumb={onClickThumb}
-             >
+             <Carousel autoPlay >
             
-                <div>
-                    <img  src={ccc1} alt='img' />
+                <div style={{height:"300px"}}>
+                    <img  src={caru} alt='img' />
                     <p className="legend">camper</p>
                 </div>
                 <div>
@@ -37,6 +32,10 @@ const CaricuelComponent = () => {
                 </div>
               
             </Carousel>
+            <div>
+                dfddifhidhfidhf
+            </div>
+
             <FooterComponet/>
 </>
 

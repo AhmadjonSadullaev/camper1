@@ -16,7 +16,11 @@ const Hcaravan = () => {
                 <p>{value.car.name}</p>
                 <p>{value.car.cost}</p>
                 <p>{value.car.company}</p>
-
+                <div style={{display: "flex",justifyContent:"space-around", }}>
+                    <button className='buttin'  >Order</button>
+                     <button className  ='buttin'>Compare</button>
+               
+                  </div>
 
              </HContainer>
 

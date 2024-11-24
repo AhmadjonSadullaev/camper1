@@ -1,0 +1,31 @@
+.usedcar{
+    background-image: url(../../assess/usedcar/australian.jpeg);
+    background-size: cover;
+    height: 500px;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.used-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 50px;
+}
+.used-con h1{
+   
+height: 98px;
+top: 245px;
+left: 537px;
+gap: 0px;
+opacity: 0px;
+font-family: Montserrat;
+font-size: 80px;
+font-weight: 700;
+line-height: 97.52px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}

@@ -13,3 +13,41 @@
     color: white;
     padding-top: 50px;
 }
+.aidal-wapper{
+
+
+top: 1238px;
+gap: 0px;
+opacity: 0px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.comfort div{
+    width: 650px;
+    height: 477px;
+    gap: 20px;
+    
+    
+}
+.comfort{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+
+.comfortp p{
+    width: 533px;
+height: 232px;
+top: 1785px;
+left: 753px;
+gap: 0px;
+opacity: 0px;
+align-items: center;
+padding: 30px;
+
+}

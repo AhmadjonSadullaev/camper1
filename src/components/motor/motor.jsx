@@ -9,6 +9,7 @@ import icons3 from '../../assess/icons3.svg';
 import HmenuCom from './hmenu';
 import VmenuCom from './vmenu';
 import icons12 from '../../assess/icons12.svg'
+import { Link } from 'react-router-dom';
 
 
 
@@ -86,8 +87,12 @@ const MotorComponent = () => {
               <div style={{display:"flex"}}>
             
               <input type="checkbox" />
-            
-              <label>Aidal</label>
+            <Link to={'/aidal'}>
+            <label>Aidal</label>
+
+            </Link>
+              
+
               </div>
               
            </div>

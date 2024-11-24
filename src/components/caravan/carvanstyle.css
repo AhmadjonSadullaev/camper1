@@ -186,3 +186,15 @@ box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
     display: flex;
     gap: 20px;
 }
+.buttin{
+    width: 94px;
+height: 35px;
+top: 252px;
+left: 11px;
+gap: 0px;
+border-radius: 10px;
+border: 1px solid #006DAB;
+color: #006DAB;
+opacity: 0px;
+
+}

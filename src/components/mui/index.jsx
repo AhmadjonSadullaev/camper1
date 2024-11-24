@@ -1,19 +1,15 @@
-import React from 'react';
+import React from 'react'
 
-
-const MuiCon = () => {
+const MuicCon = () => {
   return (
+    <div>
 
-  
- 
-<>
 
-   
-   
- </>  
 
+
+      
+    </div>
   )
 }
 
-export default MuiCon
-
+export default MuicCon;

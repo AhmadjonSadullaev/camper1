@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HContainer = styled.div`
   width: 223px;
-height: 307px;
+height: 400px;
 flex-shrink: 0;
 border-radius: 20px;
 background: #FFF;
