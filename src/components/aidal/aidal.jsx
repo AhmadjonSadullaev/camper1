@@ -8,8 +8,17 @@ import aidal3 from '../../assess/aidal/aidal3.svg';
 import aidal4 from '../../assess/aidal/aidal4.svg';
 import aidal5 from '../../assess/aidal/aidal5.svg';
 import  aidal6 from '../../assess/aidal/aidal6.svg';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
+
 
 const AidalComponent = () => {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
   return (
     <>
       <div><NavbarComponet/></div>
@@ -29,7 +38,7 @@ const AidalComponent = () => {
 
             </div>
              <div>
-
+                 
 
              </div>
             
@@ -105,7 +114,24 @@ const AidalComponent = () => {
 
          </div>
 
+         <div>
+         <Box sx={{ maxWidth: { xs: 320, sm: 480 }, bgcolor: 'background.paper' }}>
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        variant="scrollable"
+        scrollButtons="auto"
+        aria-label="scrollable auto tabs example"
+      >
+        <Tab label="motor" />
+        <Tab label="Item Two" />
+        <Tab label="Item Three" />
+        <Tab label="Item Four" />
+        
+      </Tabs>
+    </Box>
 
+         </div>
 
 
        

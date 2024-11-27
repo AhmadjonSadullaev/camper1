@@ -33,7 +33,7 @@ export const Maincontainer = styled.div`
 `;
 export const Hbutton = styled.div`
     width: 94px;
-height: 35px;
+    height: 35px;
 gap: 10px;
 align-items:center;
 border-radius: 10px;
@@ -41,6 +41,21 @@ display: flex;
 
 border: 1px solid #006DAB;
 color: #006DAB;
+
+
+`;
+export const Motordiv = styled.div`
+ display:flex;
+  flex-direction:column;
+  padding-top:30px; 
+   gap:20px;
+
+`;
+export const Inputdiv = styled.div`
+ width:450px;
+ height: 30px;
+ display: flex;
+
 
 
 `;

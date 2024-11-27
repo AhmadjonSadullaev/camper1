@@ -11,6 +11,8 @@ import LoginComponent from "./components/login/login";
 import RegisComponent from "./components/login/regis";
 import TuningComponent from "./components/tuning/tuning";
 import UsedcarComponent from "./components/usedcar/usedcar";
+import MuiComponent from "./components/mui";
+
 
 
 
@@ -34,6 +36,7 @@ const RouterComponent = () => {
                <Route path="/regis" element={<RegisComponent/>} />
                <Route path="/order" element={<OrderComponent/>}/>
                <Route path="/aidal" element={<AidalComponent/>}  />
+               <Route path="/admin" element ={<MuiComponent/>} />
               <Route path="*"  element={<Notfound/>} />
             
            </Routes>    

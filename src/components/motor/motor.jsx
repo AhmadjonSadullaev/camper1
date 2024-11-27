@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import NavbarComponet from '../navbar';
 import FooterComponet from '../footer';
@@ -9,7 +10,12 @@ import icons3 from '../../assess/icons3.svg';
 import HmenuCom from './hmenu';
 import VmenuCom from './vmenu';
 import icons12 from '../../assess/icons12.svg'
-import { Link } from 'react-router-dom';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Checkbox from '@mui/material/Checkbox';
+import { Inputdiv, Motordiv } from './styled';
+
+
 
 
 
@@ -59,18 +65,11 @@ const MotorComponent = () => {
            </div>
             <b></b>
             <div className='aidal-con'>
-              <div style={{display:"flex"}}>
-              <input type="checkbox" />
-              <label>escape</label>
-              </div>
-              <div style={{display:"flex"}}>
-              <input type="checkbox" />
-              <label>Aidal</label>
-              </div>
-              <div style={{display:"flex"}}>
-              <input type="checkbox" />
-              <label>escape</label>
-              </div>
+            <FormGroup>
+               <FormControlLabel control={<Checkbox defaultChecked />} label="르벤투스S+" />
+                 <FormControlLabel  control={<Checkbox />} label="ST-7" />
+                  <FormControlLabel  control={<Checkbox />} label="르벤투스 차박S" />
+            </FormGroup>
               </div>
             <div className='brand'>
            <h3> Company </h3>
@@ -80,95 +79,66 @@ const MotorComponent = () => {
             
 
             <div className='aidal-con'>
-              <div style={{display:"flex"}}>
-              <input type="checkbox" />
-              <label>escape</label>
-              </div>
-              <div style={{display:"flex"}}>
+            <FormGroup>
+               <FormControlLabel control={<Checkbox defaultChecked />} label="제일모빌" />
+                 <FormControlLabel  control={<Checkbox />} label="다온티앤티" />
+                  <FormControlLabel  control={<Checkbox />} label="Azure" />
+            </FormGroup>
             
-              <input type="checkbox" />
-            <Link to={'/aidal'}>
-            <label>Aidal</label>
-
-            </Link>
-              
 
               </div>
-              
-           </div>
-           <div className='brand'>
+              <div className='brand'>
            <h3> License type </h3>
            <img src={icons} alt="img" />
            </div>
             <b></b>
             <div className='aidal-con'>
-              <div style={{display:"flex"}}>
-              <input type="checkbox" />
-              <label>1year</label>
+            <FormGroup>
+               <FormControlLabel control={<Checkbox defaultChecked />} label="1 years" />
+                 <FormControlLabel  control={<Checkbox />} label="2 years" />
+                  <FormControlLabel  control={<Checkbox />} label="4 years" />
+            </FormGroup>
               </div>
-              <div style={{display:"flex"}}>
-              <input type="checkbox" />
-              <label>2years</label>
-              </div>
-              <div style={{display:"flex"}}>
-              <input type="checkbox" />
-              <label>3years</label>
-              </div>
-              </div>
-          
-
-            <div className='brand'>
+              <div className='brand'>
            <h3> Number of travelers </h3>
            <img src={icons} alt="img" />
            </div>
             <b></b>
             <div className='aidal-con'>
-              <div style={{display:"flex"}}>
-              <input type="checkbox" />
-              <label>2</label>
+            <FormGroup>
+               <FormControlLabel control={<Checkbox defaultChecked />} label="4" />
+                 <FormControlLabel  control={<Checkbox />} label="5" />
+                  <FormControlLabel  control={<Checkbox />} label="6" />
+            </FormGroup>
               </div>
-              <div style={{display:"flex"}}>
-              <input type="checkbox" />
-              <label>3,4</label>
-              </div>
-              <div style={{display:"flex"}}>
-              <input type="checkbox" />
-              <label>5+</label>
-              </div>
-              </div>
-
-            <div className='brand'>
+              <div className='brand'>
            <h3> Location </h3>
            <img src={icons} alt="img" />
            </div>
             <b></b>
             <div className='aidal-con'>
-              <div style={{display:"flex"}}>
-              <input type="checkbox" />
-              <label>Seoul</label>
+            <FormGroup>
+               <FormControlLabel control={<Checkbox defaultChecked />} label="Seoul" />
+                 <FormControlLabel  control={<Checkbox />} label="Busan" />
+                  <FormControlLabel  control={<Checkbox />} label="Korea" />
+            </FormGroup>
               </div>
-              <div style={{display:"flex"}}>
-              <input type="checkbox" />
-              <label>Korea</label>
-              </div>
-              <div style={{display:"flex"}}>
-              <input type="checkbox" />
-              <label>Busan</label>
-              </div>
-              </div>
-        <div className='cancel-con'>
+              <div className='cancel-con'>
               <div>
                  <button className='can-but'>Cancel</button>
               </div>
               <div>
                  <button className='can-but1'>Search</button>
               </div>
-      </div>
+           </div>
+      
        <div>  <img src={icons12} alt="img" /></div>
-   
-      </div>
 
-        <div style={{ display:"flex", flexDirection:"column", paddingTop:"30px", gap:"20px"}}>
+           </div>
+           
+      
+         <Motordiv>
+        
            <div className="item-con">
            <div className='item-con2'>
               <div style={{flex:"1" }}>
@@ -176,9 +146,12 @@ const MotorComponent = () => {
               </div>
             <div style={{ display:"flex", flex:"1" ,gap:"10px"}}>
               <div style={{display:"flex", alignItems:"center"}}>
-                   <label >Sort by</label>
-                   <input className='input22' placeholder='Select' type="text" />
-                    <button className='button1' ><img src={icons} alt="" /></button>
+                  
+                 <Inputdiv>
+                 <label >Sort by</label>
+                  <input style={{width:"300px"}} type="text" />
+                 </Inputdiv>
+          
               </div>
               <div style={{display:"flex"}}>
                   <input className='input23' placeholder='60' type="text" />
@@ -197,7 +170,8 @@ const MotorComponent = () => {
            <div className='hvmenu'>
                {active ? <HmenuCom/> : <VmenuCom/>}
            </div>
-        </div>
+        
+        </Motordiv>
         
 </div>
     
