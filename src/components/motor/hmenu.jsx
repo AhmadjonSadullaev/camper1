@@ -5,43 +5,38 @@ import { HContainer, Maincontainer } from './styled';
 
 
 const HmenuCom = () => {
+ 
+
   console.log( motordata);
   return (
-     <div style={{display: "flex",}}>
-      <Maincontainer>
-        {motordata.map((value,index) =>{
-           return(
-               <HContainer key={value.id}>
-                 <img src={value.car.photo} alt="" />
-                  <p>{value.car.name}</p>
-                  <p>{value.car.cost}</p>
-                  <p>{value.car.company}</p>
-                  <div style={{display: "flex",justifyContent:"space-around", }}>
+    <div style={{display: "flex"}}>
+    <Maincontainer>
+      {motordata.map((value,index) =>{
+         return(
+             <HContainer key={value.id}>
+               <img src={value.car.photo} alt="img" />
+                <p>{value.car.name}</p>
+                <p>{value.car.cost}</p>
+                <p>{value.car.company}</p>
+                <div style={{display: "flex",justifyContent:"space-around", }}>
                     <button className='buttin'  >Order</button>
                      <button className  ='buttin'>Compare</button>
                
                   </div>
-                 
-                 
-                
-                
 
-               </HContainer>
+             </HContainer>
 
 
 
-          )
+        )
 
 
-        })}
-         </Maincontainer>
-     </div>
-
-
+      })}
+       </Maincontainer>
+   </div>
   )
-   
+}
 
  
-}
 
 export default HmenuCom;

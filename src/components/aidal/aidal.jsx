@@ -108,7 +108,7 @@ const AidalComponent = () => {
               </div>
           
              </div>
-
+;
 
 
 
@@ -123,11 +123,11 @@ const AidalComponent = () => {
         scrollButtons="auto"
         aria-label="scrollable auto tabs example"
       >
-        <Tab label="motor" />
-        <Tab label="Item Two" />
-        <Tab label="Item Three" />
-        <Tab label="Item Four" />
-        
+        <Tab label="Item reviews"/>
+            
+        <Tab label="Q&A  "/>
+        <Tab label="FAQ" />
+        <Tab label="Contact" />
       </Tabs>
     </Box>
 

@@ -1,8 +1,8 @@
 import img from '../../assess/motor/car1.svg';
-import img3 from '../../assess/caravan/OIP1.jpg';
-import img4 from '../../assess/caravan/OIP3.jpg';
-import img5 from '../../assess/caravan/OIP2.jpg';
-import img2 from '../../assess/caravan/OIP4.jpg';
+import img3 from '../../assess/caravan/car8.jpg';
+import img4 from '../../assess/caravan/car3.jpg';
+import img5 from '../../assess/caravan/car11.jpg';
+import img2 from '../../assess/caravan/camper2.jpg';
 export const caravandata = [
   {
     id: 1,

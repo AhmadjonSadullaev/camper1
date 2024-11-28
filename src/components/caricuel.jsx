@@ -111,20 +111,22 @@ const CaricuelComponent = () => {
                        <h2>Videos</h2>
                     </div> 
                     <Carusel>
-                      <div><img src={img11} alt="img" /></div>
+                      <div > <img src={img11} alt="img" /></div>
                        <div><img src={img22} alt="img" /></div>
                         <div><img src={img33} alt="img" /></div>
                         <div><img src={img44} alt="img" /></div>
-                      <div>  <img src={img55} alt="img" /> </div>
-                      <div><img src={img6} alt="img" />   </div>
-                      <div><img src={img7} alt="img" /></div>
-                      <div><img src={img8} alt="img" /></div>
+                       <div>  <img src={img55} alt="img" /> </div>
+                       <div><img src={img6} alt="img" />   </div>
+                       <div><img src={img7} alt="img" /></div>
+                        <div><img src={img8} alt="img" /></div>
                        
                    
                       </Carusel>
-
+                        
              </div>
+             <div style={{textAlign:"center"}}><h1>Blogs</h1></div>
              <Carusels>
+                    
                    <div>
                        <h2>Camper</h2>
                        <br />

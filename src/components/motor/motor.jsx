@@ -13,13 +13,15 @@ import icons12 from '../../assess/icons12.svg'
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import { Inputdiv, Motordiv } from './styled';
+import { HContainer, Inputdiv, Maincontainer, Motordiv } from './styled';
+import { motordata } from '../mock/motor (2)';
 
 
 
 
 
 const MotorComponent = () => {
+   const [searchData,setSearchData]= useState("");
   const[active, setActive ] = useState(true);
    function handleHmenu(){
    setActive(true);
@@ -27,6 +29,9 @@ const MotorComponent = () => {
   function handleVmenu() {
     setActive(false);
   }
+  const SearchDateList = motordata.filter((date) =>
+    date.car.name.includes(searchData)
+);
 
   return (
     
@@ -66,7 +71,7 @@ const MotorComponent = () => {
             <b></b>
             <div className='aidal-con'>
             <FormGroup>
-               <FormControlLabel control={<Checkbox defaultChecked />} label="르벤투스S+" />
+               <FormControlLabel control={<Checkbox  />} label="르벤투스S+" />
                  <FormControlLabel  control={<Checkbox />} label="ST-7" />
                   <FormControlLabel  control={<Checkbox />} label="르벤투스 차박S" />
             </FormGroup>
@@ -80,7 +85,7 @@ const MotorComponent = () => {
 
             <div className='aidal-con'>
             <FormGroup>
-               <FormControlLabel control={<Checkbox defaultChecked />} label="제일모빌" />
+               <FormControlLabel control={<Checkbox  />} label="제일모빌" />
                  <FormControlLabel  control={<Checkbox />} label="다온티앤티" />
                   <FormControlLabel  control={<Checkbox />} label="Azure" />
             </FormGroup>
@@ -94,7 +99,7 @@ const MotorComponent = () => {
             <b></b>
             <div className='aidal-con'>
             <FormGroup>
-               <FormControlLabel control={<Checkbox defaultChecked />} label="1 years" />
+               <FormControlLabel control={<Checkbox  />} label="1 years" />
                  <FormControlLabel  control={<Checkbox />} label="2 years" />
                   <FormControlLabel  control={<Checkbox />} label="4 years" />
             </FormGroup>
@@ -102,11 +107,11 @@ const MotorComponent = () => {
               <div className='brand'>
            <h3> Number of travelers </h3>
            <img src={icons} alt="img" />
-           </div>
+           </div>   
             <b></b>
             <div className='aidal-con'>
             <FormGroup>
-               <FormControlLabel control={<Checkbox defaultChecked />} label="4" />
+               <FormControlLabel control={<Checkbox />} label="4" />
                  <FormControlLabel  control={<Checkbox />} label="5" />
                   <FormControlLabel  control={<Checkbox />} label="6" />
             </FormGroup>
@@ -118,7 +123,7 @@ const MotorComponent = () => {
             <b></b>
             <div className='aidal-con'>
             <FormGroup>
-               <FormControlLabel control={<Checkbox defaultChecked />} label="Seoul" />
+               <FormControlLabel control={<Checkbox />} label="Seoul" />
                  <FormControlLabel  control={<Checkbox />} label="Busan" />
                   <FormControlLabel  control={<Checkbox />} label="Korea" />
             </FormGroup>
@@ -149,7 +154,17 @@ const MotorComponent = () => {
                   
                  <Inputdiv>
                  <label >Sort by</label>
-                  <input style={{width:"300px"}} type="text" />
+                  <input style={{width:"300px"}} type="text"
+                  
+                  value={searchData}
+                  onChange={(e)=> setSearchData(e.target.value)}
+               
+                  
+                  />
+                    
+
+
+
                  </Inputdiv>
           
               </div>
@@ -180,11 +195,33 @@ const MotorComponent = () => {
           
         
 
-  
-  
+
    
      
+   <div> <Maincontainer>
+      {SearchDateList.map((value,index) =>{
+         return(
+             <HContainer key={value.id}>
+               <img src={value.car.photo} alt="img" />
+                <p>{value.car.name}</p>
+                <p>{value.car.cost}</p>
+                <p>{value.car.company}</p>
+                <div style={{display: "flex",justifyContent:"space-around", }}>
+                    <button className='buttin'  >Order</button>
+                     <button className  ='buttin'>Compare</button>
+               
+                  </div>
+                
 
+             </HContainer>
+
+
+
+        )
+
+
+      })}
+       </Maincontainer></div>
 
      
     <div><FooterComponet/></div>

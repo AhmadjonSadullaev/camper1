@@ -4,9 +4,20 @@ import { Link } from 'react-router-dom';
 
 
 
+
+
+
+
 export const LoginComponent = () => {
+   
   return (
-  <>
+  <> 
+ 
+
+         
+
+
+
   <div className='homepage12' style={{alignItems:"center", display:"flex" , justifyContent:"center" ,paddingTop:"50px"}}>
      <div className='login-page'>
            <div>
